@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+}
+
+input {
+  display: none;
+}
+
+.btn {
+  width: 200px;
+  height: 100px;
+  background-color: #c1c1c1;
+  border-radius: 200px;
+  cursor: pointer;
+  position: relative;
+}
+
+.btn::before {
+  position: absolute;
+  content: '';
+  height: 90px;
+  width: 90px;
+  background-color: #fff;
+  border-radius: 200px;
+  margin: 5px;
+  transition: transform 0.2s ease-in-out;
+}
+
+input:checked+.btn {
+  background-color: #dc143c;
+}
+
+input:checked+.btn::before {
+  transform: translateX(calc(100% + 10px));
+}
