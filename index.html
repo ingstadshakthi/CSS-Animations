@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Css Animations</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+    body {
+      font-family: "Roboto", sans-serif;
+    }
+
+    .outer-container {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      margin-bottom: 20px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 50px
+    }
+
+    nav a {
+      text-decoration: none;
+      font-size: 22px;
+    }
+
+    .container {
+      height: 500px;
+      width: 375px;
+      background-color: white;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .container img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      cursor: pointer;
+    }
+
+    .container .content {
+      position: absolute;
+      bottom: -180px;
+      background-color: #fff;
+      padding: 15px;
+      transition: bottom 0.3s ease-in-out;
+      width: 100%;
+    }
+
+    .container:hover .content {
+      bottom: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="outer-container">
+
+    <header>
+      <h1>Css Animations</h1>
+    </header>
+    <nav>
+      <a href="Day_01_photo_frame/index.html">
+        <div class="container">
+          <img src="assets/photos/1.png" alt="Photo Frame">
+          <div class="content">
+            Photo Frame
+          </div>
+        </div>
+      </a>
+      <a href="Day_2_rotating_color_balls/index.html">
+        <div class="container">
+          <img src="assets/photos/2.png" alt="Rotating Balls">
+          <div class="content">
+            Rotating Balls
+          </div>
+        </div>
+      </a>
+      <a href="Day_3_animated_wave_circle/index.html">
+        <div class="container">
+          <img src="assets/photos/3.png" alt="Animated Wave Circle">
+          <div class="content">
+            Animated Wave Circle
+          </div>
+        </div>
+      </a>
+      <a href="Day_04_typing_writing_effect/index.html">
+        <div class="container">
+          <img src="assets/photos/4.png" alt="Type Writing">
+          <div class="content">
+            Type Writing
+          </div>
+        </div>
+      </a>
+      <a href="Day_05_animated_photo_gallery/index.html">
+        <div class="container">
+          <img src="assets/photos/5.png" alt="Photo gallery">
+          <div class="content">
+            Photo gallery
+          </div>
+        </div>
+      </a>
+      <a href="Day_06_tourist_card/index.html">
+        <div class="container">
+          <img src="assets/photos/6.png" alt="Tourist Card">
+          <div class="content">
+            Tourist Card
+          </div>
+        </div>
+      </a>
+      <a href="Day_07_button_hover_animation/index.html">
+        <div class="container">
+          <img src="assets/photos/7.png" alt="Button Animation">
+          <div class="content">
+            Button Animation
+          </div>
+        </div>
+      </a>
+      <a href="Day_08_animated_toggle_button/index.html">
+        <div class="container">
+          <img src="assets/photos/8.png" alt="Toggle Button">
+          <div class="content">
+            Toggle Button
+          </div>
+        </div>
+      </a>
+      <a href="Day_09_animated_border_button/index.html">
+        <div class="container">
+          <img src="assets/photos/9.png" alt="Animated Border Button">
+          <div class="content">
+            Animated Border Button
+          </div>
+        </div>
+      </a>
+      <a href="Day_10_animated_navbar/index.html">
+        <div class="container">
+          <img src="assets/photos/10.png" alt="Animated Navbar">
+          <div class="content">
+            Animated Navbar
+          </div>
+        </div>
+      </a>
+      </main>
+
+  </div>
+</body>
+
+</html>
